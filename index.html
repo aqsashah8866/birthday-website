@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+[8:18 PM, 9/4/2026] SYEDA🏴: <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -98,6 +98,146 @@
             <source src="my-video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
+    </div>
+
+</body>
+</html>
+[8:39 PM, 9/4/2026] SYEDA🏴: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            background: radial-gradient(circle at center, #1b2735 0%, #090a0f 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            position: relative;
+            z-index: 10;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            border-radius: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+            max-width: 500px;
+            width: 90%;
+            animation: popIn 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #ff4757;
+            text-shadow: 0 0 15px rgba(255, 71, 87, 0.6);
+            margin-bottom: 15px;
+            animation: pulse 1.5s infinite alternate;
+        }
+
+        p {
+            font-size: 1.3rem;
+            color: #eccc68;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            background: linear-gradient(45deg, #ff4757, #ff6b81);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(255, 71, 87, 0.4);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn:hover {
+            transform: scale(1.08);
+            box-shadow: 0 8px 25px rgba(255, 71, 87, 0.6);
+        }
+
+        /* Balloon Animation */
+        .balloon-container {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .balloon {
+            position: absolute;
+            bottom: -120px;
+            width: 45px;
+            height: 55px;
+            border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
+            animation: float 7s infinite ease-in;
+        }
+
+        .balloon::before {
+            content: "";
+            position: absolute;
+            bottom: -12px;
+            left: 20px;
+            width: 2px;
+            height: 15px;
+            background: rgba(255, 255, 255, 0.7);
+        }
+
+        .b1 { left: 10%; background: #ff4757; animation-duration: 6s; }
+        .b2 { left: 30%; background: #2ed573; animation-duration: 8s; animation-delay: 1s; }
+        .b3 { left: 50%; background: #ffa502; animation-duration: 5s; animation-delay: 2s; }
+        .b4 { left: 70%; background: #1e90ff; animation-duration: 7s; animation-delay: 0.5s; }
+        .b5 { left: 90%; background: #9b59b6; animation-duration: 9s; animation-delay: 1.5s; }
+
+        @keyframes float {
+            0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(-120vh) rotate(20deg); opacity: 0; }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.05); }
+        }
+
+        @keyframes popIn {
+            0% { transform: scale(0); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="balloon-container">
+        <div class="balloon b1"></div>
+        <div class="balloon b2"></div>
+        <div class="balloon b3"></div>
+        <div class="balloon b4"></div>
+        <div class="balloon b5"></div>
+    </div>
+
+    <div class="container">
+        <h1>🎂 Happy Birthday! 🎉</h1>
+        <p>Wishing you a magical day full of joy, happiness, and beautiful memories! ✨</p>
+        <button class="btn" onclick="alert('🎉 Wishing you all the happiness in the world!')">Click for Wish 🎈</button>
     </div>
 
 </body>
